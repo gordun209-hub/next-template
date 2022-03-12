@@ -22,6 +22,7 @@ function Counter() {
     <div>
       <div className={styles.row}>
         <button
+          type='submit'
           className={styles.button}
           aria-label='Decrement value'
           onClick={() => dispatch(decrement())}
@@ -30,6 +31,7 @@ function Counter() {
         </button>
         <span className={styles.value}>{count}</span>
         <button
+          type='submit'
           className={styles.button}
           aria-label='Increment value'
           onClick={() => dispatch(increment())}
@@ -45,18 +47,21 @@ function Counter() {
           onChange={e => setIncrementAmount(e.target.value)}
         />
         <button
+          type='submit'
           className={styles.button}
           onClick={() => dispatch(incrementByAmount(incrementValue))}
         >
           Add Amount
         </button>
         <button
+          type='submit'
           className={styles.asyncButton}
           onClick={() => dispatch(incrementAsync(incrementValue))}
         >
           Add Async
         </button>
         <button
+          type='submit'
           className={styles.button}
           onClick={() => dispatch(incrementIfOdd(incrementValue))}
         >
