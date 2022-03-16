@@ -15,6 +15,7 @@
     "@typescript-eslint",
     "import",
     "react",
+    "prefer-arrow",
     "react-hooks",
     "simple-import-sort",
     "ramda",
@@ -46,6 +47,14 @@
         "ignoreCase": true,
         "reservedFirst": true,
         "noSortAlphabetically": true
+      }
+    ],
+    "prefer-arrow/prefer-arrow-functions": [
+      "error",
+      {
+        "disallowPrototype": true,
+        "singleReturnOnly": true,
+        "classPropertiesAllowed": true
       }
     ]
   },

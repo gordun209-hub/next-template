@@ -2,12 +2,7 @@
   "compilerOptions": {
     "target": "esnext",
     "useDefineForClassFields": true,
-    "lib": [
-      "DOM",
-      "DOM.Iterable",
-      "ESNext",
-      "ScriptHost"
-    ],
+    "lib": ["DOM", "DOM.Iterable", "ESNext", "ScriptHost"],
     "allowJs": false,
     "skipLibCheck": false,
     "esModuleInterop": true,
@@ -20,25 +15,13 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "noEmit": true,
-    "types": [
-      "node",
-      "jest",
-      "@testing-library/jest-dom"
-    ],
+    "types": ["node", "jest", "@testing-library/jest-dom"],
     "incremental": true
   },
-  "baseUrl": ".",
+  "baseUrl": "./",
   "paths": {
-    "@/*": [
-      "src/*"
-    ]
+    "@/*": ["src/*"]
   },
-  "exclude": [
-    "node_modules"
-  ],
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx"
-  ]
+  "exclude": ["node_modules"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
 }
